@@ -5,11 +5,10 @@ import numpy as np
 
 # Prepare the Data
 
-xy = np.loadtxt('D:\\pyTorch Review\\1st Exercise\\data\\data_diabetes.csv', delimiter=',', dtype=np.float32)
+xy = np.loadtxt('..\\data\\data_diabetes.csv', delimiter=',', dtype=np.float32)
 
 x = torch.from_numpy(xy[:, 0:-1])
 y = torch.from_numpy(xy[:, [-1]])
-
 
 # Build the model
 
