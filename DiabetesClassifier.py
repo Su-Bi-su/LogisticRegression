@@ -4,8 +4,6 @@ import torch.nn as nn
 import torch.optim as optim
 import matplotlib.pyplot as plt
 
-
-
 # Prepare the Data
 
 xy = np.loadtxt('..\\data\\data_diabetes.csv', delimiter=',', dtype=np.float32)
@@ -63,9 +61,8 @@ for epoch in range(1500):
     loss.backward()
     optimizer.step()
 
-
 # After Training
-#plot loss curve
+# plot loss curve
 
 fig, ax = plt.subplots()
 ax.plot(range(1500), train_loss)
@@ -73,7 +70,6 @@ ax.set_title("Loss Curve")
 plt.xlabel("#epoches")
 plt.ylabel("loss")
 plt.show()
-
 
 # Evaluate the network
 
